@@ -1,0 +1,11 @@
+[Unit]
+Description=Gunicorn instance for a simple web player app
+After=network.target
+[Service]
+User=ubuntu
+Group=www-data
+WorkingDirectory=/home/ubuntu/video-player-website
+ExecStart=gunicorn -b localhost:8000 main:app
+Restart=always
+[Install]
+WantedBy=multi-user.target
