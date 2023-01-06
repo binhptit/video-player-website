@@ -2,3 +2,6 @@
 website/__pycache__
 website/database.db
 env/*
+logs/apache/*
+logs/elf/*
+logs/nginx/*
